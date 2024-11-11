@@ -1,0 +1,669 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'didact_gothicregular';
+    src: url('didactgothic-regular-webfont.woff2') format('woff2'),
+         url('didactgothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('Jost-VariableFont_wght.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'eb_garamonditalic';
+    src: url('ebgaramond-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('ebgaramond-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'eb_garamondregular';
+    src: url('ebgaramond-variablefont_wght-webfont.woff2') format('woff2'),
+         url('ebgaramond-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+:root {
+  --highlight-color: #669dd8; /* Define the main color using a CSS variable */
+  /*--hover-color-light: #3edde9;*/
+  --hover-color-light: #669be6;
+  --text-on-dark-color:  rgb(104, 115, 168);
+  --dark-background-color: rgb(30, 36, 67);
+  --light-background-color: rgb(217, 221, 235);
+  --very-dark-background-color: rgba(22, 23, 28);
+  --very-dark-background-color-alpha: rgba(22, 23, 28, 0.9);
+}
+
+/* Set the overall font family to Jost */
+body {
+    font-family: 'Jost';
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 0; /* Add this line to remove default body margin */
+    padding: 0; /* Add this line to remove default body padding */
+  }
+ 
+  
+  /* Style the navigation bar */
+  header {
+    position: fixed;
+    left: 0px;
+    right: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.0); /* Set the background color */
+    z-index: 999;
+    padding-top: 0px; /* Add some padding */
+    text-align: right;
+    top: 0;
+  }
+  header.scrolled {
+    background-color: var(--very-dark-background-color-alpha);
+  }
+
+  footer {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0%;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 100px; /* Add spacing at the top */
+    color: var(--highlight-color);
+    background-color: var(--light-background-color); 
+  }
+
+  .dark-background {
+    background-color: var(--dark-background-color);
+  }
+
+  #contact-section {
+    display: flex;
+    justify-content: space-between; /* Space between left and right blocks */
+    align-items: center; /* Align vertically */
+    padding: 20px 50px;  /* Adjust padding */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+  .contact-block {
+    flex: 1; /* Make both blocks take equal space */
+    padding: 20px;
+  }
+
+/* Left Block (Logo) */
+  .contact-block.left {
+     text-align: left; /* Align logo to the left */
+  }
+
+  .contact-block.left .logo {
+    max-width: 150px; /* Set a max width for the logo */
+    height: auto; /* Maintain logo aspect ratio */  
+  }
+
+/* Right Block (Information & Links) */
+  .contact-block.right {
+    text-align: right; /* Align text and links to the right */
+  }
+
+  .line {
+    width: 100%;
+    height: 0px;
+    background-color: var(--highlight-color);
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    list-style-type: none; /* Remove the default bullet points */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+  }
+  
+  nav ul li {
+    display: inline-block; /* Display the navigation items horizontally */
+    margin-right: 10px; /* Add some spacing between the items */
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Remove the default underline */
+    color: #333; /* Set the text color */
+    padding: 5px 10px; /* Add some padding */
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--hover-color-light); /* Add a background color on hover */
+    color: var(--very-dark-background-color); /* Change the text color on hover */
+  }
+
+  .parallax-section {
+    min-height: 50vh; /* Set a minimum height to ensure full viewport coverage */
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0vh;
+    padding-bottom: 10vh;
+  }
+  
+  /*.container-banner {
+    max-width: 40%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.2);
+    margin: 10 auto;
+  }*/
+
+  .parallax-section-banner {
+    background-color: black;
+    z-index: -1;
+  }
+
+  .parallax-section-white {
+    background-color: var(--light-background-color);
+  }
+
+  /*.parallax-section-lightblue {
+    background-color: rgb(235, 235, 235);
+  }*/
+  .parallax-section-lightblue {
+    background-color: rgb(30, 36, 67);
+  }
+
+  .parallax-section-lightblue p {
+    color: rgb(104, 115, 168);
+  }
+
+  .parallax-section-lightblue h1 {
+    color: rgb(104, 115, 168);
+  }
+
+  .parallax-section-banner {
+    min-height: 90vh;
+  }
+
+  .parallax-section:first-child h1 {
+    color: var(--hover-color-light); /* Change the color of the h1 element */
+  }
+  
+  .parallax-section:first-child p {
+    color: black; /* Change the color of the p element */
+  }
+  
+  .container {
+    max-width: 90%;
+    /*max-height: 90%;*/
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 200px; /* Add spacing at the top */
+  }
+  /*.container p{
+    max-width: 80%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }*/
+  .container h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    color: var(--highlight-color);
+  }
+
+  .container h2 {
+    font-size: 32px;
+  }
+
+  .container h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .container p {
+    font-size: 32px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-family: 'didact_gothicregular';
+    /*border-top: 2px solid var(--highlight-color);*/
+  }
+
+  .centeredtext {
+    /* font-size: 30px; */
+    display: flex;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(2, 1fr);    /* Two equal rows */
+    gap: 10px;                             /* Space between the grid items */
+    padding: 20px;
+  }
+
+/* Style for each grid item */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0px;
+    overflow: hidden;
+
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    #discover {
+        grid-template-columns: 1fr; /* Switch to single column on small screens */
+        grid-template-rows: auto;   /* Allow rows to adjust based on content */
+    }
+}
+
+  .grid-container h2 {
+    color: var(--highlight-color);
+  }
+  /*
+  .grid-item h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .grid-item p {
+    font-size: 18px;
+    color: #666;
+  }*/
+
+  /*.team-images {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .team-images p {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .team-images img {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 20%; 
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /*.image:hover img {
+    transform: scale(1.1);
+  }*/
+  
+  
+
+  .menu {
+    background-color: transparent; /* Set background color */
+    padding: 20px 0; /* Add padding to create separation line */
+  }
+  
+  .menu {
+    text-align: right;
+    /*border-bottom: 2px solid var(--highlight-color); /* Add blue separation line */
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  
+  .menu li {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color:white;/* #333;*/
+    padding: 5px 10px;
+  }
+
+  .logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .logo .desktop-logo {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width:  180px; /* Adjust the size of the desktop logo as needed */
+    height: auto;
+  }
+  
+  .logo .mobile-logo {
+    display: none;
+    width: 50px; /* Adjust the size of the mobile logo as needed */
+    height: auto;
+  }
+
+  a {
+    color: #0198a3; /* Set the link color */
+    text-decoration: none; /* Add underline to the link */
+  }
+  
+  a:hover {
+    color: var(--hover-color-light); /* Change the text color on hover */ 
+  }
+
+  .subblocks-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .subblock {
+    background-color: transparent; /* rgba(204, 204, 204, 0.329);*/
+    padding: 20px;
+    background-size: cover;
+    border-radius: 0px;
+    /*text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);*/
+    /*filter: contrast(0.8);*/
+  }
+
+  .subblock:hover {
+    background-color: var(--dark-background-color);
+    color: var(--highlight-color)
+  }
+
+  .subblock p {
+    font-size: 20pt;
+  }
+
+  .banner {
+    position: absolute;
+    top: 0%;
+    transform: translateY(0%);
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 1;
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 100%),
+                linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 110%);*/
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+  }
+
+  .container-banner {
+    position: absolute;
+    left: 0;
+    width: 30%; /* Occupy the left half of the screen */
+    height: 80%;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black background */
+    color: white;
+    z-index: 1; /* Ensure the text stays above the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*border-radius: 10px; /* Add rounded corners */
+  }
+
+  .contact-form {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: grid;
+    gap: 5px;
+    max-width: 90%;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid var(--highlight-color);
+    /*border-radius: 4px;*/
+  }
+
+  .name-input,
+  .email-input {
+  max-width: 400px;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #0198a3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 6px 24px;
+    font-size: 18pt;
+    background-color: var(--hover-color-light); /* Button background color */
+    color: var(--very-dark-background-color); /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 0px; /* Rounded corners */
+    margin-top: 20px; /* Spacing between text and button */
+    transition: background-color 0.2s ease; /* Smooth hover transition */
+  }
+
+  .button:hover {
+    background-color: var(--highlight-color); /* Change color on hover */
+    color: white;
+  }
+
+  .horizontal-center {
+    /*margin: 0;
+    position: absolute;
+    left: 50%;*/
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .horizontal-center-2 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+  }
+
+  /*.subblock.subblock-image_01 {
+    background-image: url('tech_01.jpg');
+  }
+  
+  .subblock.subblock-image_02 {
+    background-image: url('tech_02.jpg');
+  }
+  .subblock.subblock-image_03 {
+    background-image: url('tech_03.jpg');
+  }
+  .subblock.subblock-image_04 {
+    background-image: url('tech_04.jpg');
+  }*/
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 60%; /* Set the absolute max width for screens larger than 1200px */
+    }
+    .container h1 {
+      font-size: 60px; /* Font size for screens larger than 1024px */
+    }
+}
+
+  /* Styles for smaller screens */
+@media (max-width: 767px) {
+  .subblocks-container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack items on top of each other in one column */
+  }
+
+  .grid-item:nth-child(odd) .text {
+    order: 1;
+  }
+
+  .grid-item:nth-child(odd) .image {
+    order: 2;
+  }
+  
+  .grid-item:nth-child(even) .text {
+    order: 1;
+  }
+
+  .grid-item:nth-child(even) .image {
+    order: 2;
+  }
+  
+  
+
+  .container p{
+    font-size: 24px;
+  }
+  
+    header {
+      padding: 10px;
+      border-bottom: 0px solid var(--highlight-color);
+    }
+  
+    nav ul {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+      text-align: left;
+    }
+  .menu {
+    display: none;
+    background-color: transparent; /* Set background color */
+    padding: 10px 0; /* Add padding to create separation line */
+    transition: max-height 0.3s ease;
+  }
+  
+  #menu-toggle.active + .menu {
+    display: block;
+  }
+  
+  .menu-icon {
+    display: unset;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    color: var(--highlight-color);
+
+  }
+
+  /*.menu-icon:hover {
+    color: var(--hover-color-light);
+  }*/
+  
+  .menu {
+    text-align: center;
+    border-bottom: unset; /* Add blue separation line */
+  }
+  
+  .menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #999;
+    padding: 5px 10px;
+  }
+
+  .logo .desktop-logo {
+    display: none;
+  }
+
+  .logo .mobile-logo {
+    display: block;
+  }
+
+  .subblocks-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

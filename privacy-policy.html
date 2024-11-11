@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linque</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img class="desktop-logo" src="logotxt.png" alt="Desktop Logo">
+          <img class="mobile-logo" src="mobile.png" alt="Mobile Logo">
+        </a>
+      </div>
+      <div class="nav-container">
+        <button id="menu-toggle" class="menu-icon">&#9776;</button>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const menu = document.querySelector('.menu');
+      menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+    </script>
+  </header>
+
+  <main>
+    <section id="blank" class="parallax-section"></section>
+    <section id="privacy" class="parallax-section">
+        <div class="privacy-statement">
+            <h2>Datenverarbeitung zur Übermittlung der Onlineinhalte</h2>
+            <p>
+              Zum Zweck der Übermittlung der von Ihnen aufgerufenen Webseite werden von Ihrem Browser typischerweise unter anderem folgende Informationen (im Rahmen von sogenannten HTTP-Requests) übersandt:
+            </p>
+            <ul>
+              <li>Ihre IP-Adresse: Eine Ziffernfolge, die Ihren derzeitigen Computeranschluss im Internet identifiziert.</li>
+              <li>Die von Ihnen aufgerufene URL: Die Webseite und ggf. weitere Parameter.</li>
+              <li>Informationen zu dem von Ihnen verwendeten Browser und Betriebssystem, wie deren Name und Version.</li>
+              <li>Unter Umständen die Seite, von der aus Sie zu uns gelangt sind (Referrer-Information).</li>
+              <li>Der Zeitpunkt der Anfrage.</li>
+            </ul>
+          </div>
+
+          <div class="privacy-statement">
+            <h2>Data Processing for the Transmission of Online Content</h2>
+            <p>
+              For the purpose of transmitting the web page you have accessed, your browser typically sends the following information (as part of HTTP requests):
+            </p>
+            <ul>
+              <li>Your IP address: A numerical sequence that identifies your current computer connection to the internet.</li>
+              <li>The URL you have accessed: The web page and, if applicable, additional parameters.</li>
+              <li>Information about the browser and operating system you are using, such as their name and version.</li>
+              <li>Possibly, the page from which you accessed our website (referrer information).</li>
+              <li>The time of the request.</li>
+            </ul>
+          </div>
+          
+          
+    </section>
+
+
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="line"></div>
+      <div class="contact-section">
+        <h2>Contact Information</h2>
+        <p>Jonathan Förste<br>
+          Geschwister-Scholl-Platz 1<br>
+          80805 Munich<br>
+          GERMANY</p>
+        <p><a href="mailto:info@linque.eu">info@linque.eu</a><br>
+          Phone: 089 2180 2644</p>
+      </div>
+      <div class="privacy-link">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-menu">
+        <!-- Include any additional footer menu items or links here -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

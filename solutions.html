@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linque</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header id="header">
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img class="desktop-logo" src="logotxt.png" alt="Desktop Logo">
+          <img class="mobile-logo" src="mobile.png" alt="Mobile Logo">
+        </a>
+      </div>
+      <div class="nav-container">
+        <button id="menu-toggle" class="menu-icon">&#9776;</button>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const menu = document.querySelector('.menu');
+      menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+    </script>
+    <script src="headerscript.js"></script>
+  </header>
+
+  <!--COPY UNTIL HERE FOR HEADER-->
+  <main>
+    <section id="home" class="parallax-section parallax-section-banner">
+      <div class="banner">
+        <img src="tech_03.jpg" alt="Banner Image">
+      </div>
+      <div class="container container-banner">
+        <h1></h1>
+        <!--<p>And because it is very inspiring we believe in it. You should too.</p>-->
+      </div>
+    </section>
+
+    <section id="subtitle" class="parallax-section parallax-section-lightblue">
+      <div id="subtitle_text" class="container">
+        <h1>ABOUT US</h1>
+        <p>We are a team of innovators and designers on a mission to build sustainable hardware products. 
+        </p>
+
+      </div>
+    </section>
+
+    <section id="technology" class="parallax-section parallax-section-white">
+        <div class="container">
+  
+          <h1><⋰> 〈╱〉⬡ Technology</h1>
+              <p>We believe that integrated photonics provide the key to unlock the next era of computing, 
+                by removing the boundaries electronic systems face today. 
+              </p>
+  
+          <div class="subblocks-container">
+            
+            <div class="subblock subblock-image_01">
+              <h2>Sustainable</h2>
+                <p>Innovative programmable processors reduces energy consumption and cooling requirements. </p>
+            </div>
+            <div class="subblock subblock-image_02">
+              <h2>Rapid</h2>
+              <p>Accelerated data encoding speeds enables low-latency use-cases.</p>
+            </div>
+            <div class="subblock subblock-image_03">
+              <h2>Scalable</h2>
+              <p>Chip-based analog algorithms ensures volume deployment for relevant applications.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technology" class="parallax-section parallax-section-white">
+        <div class="container">
+  
+          <h1><⋰> 〈╱〉⬡ Technology</h1>
+              <p>We believe that integrated photonics provide the key to unlock the next era of computing, 
+                by removing the boundaries electronic systems face today. 
+              </p>
+  
+          <div class="subblocks-container">
+            
+            <div class="subblock subblock-image_01">
+              <h2>Sustainable</h2>
+                <p>Innovative programmable processors reduces energy consumption and cooling requirements. </p>
+            </div>
+            <div class="subblock subblock-image_02">
+              <h2>Rapid</h2>
+              <p>Accelerated data encoding speeds enables low-latency use-cases.</p>
+            </div>
+            <div class="subblock subblock-image_03">
+              <h2>Scalable</h2>
+              <p>Chip-based analog algorithms ensures volume deployment for relevant applications.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!--COPY FROM  HERE FOR FOOTER-->
+
+</main>
+
+<footer>
+    <div class="footer-container">
+      <div class="line"></div>
+      <div class="contact-block left">
+        <!-- Logo -->
+        <img src="logotxt.png" alt="Logo" class="logo">
+      </div>
+      <div class="contact-block right">
+        <p><a href="https://de.linkedin.com/company/linque-technologies">Linkedin</a></p>
+        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p>Copyright © 2024</p>
+    </div>
+     <!-- <div class="contact-section">
+        <h2>Contact</h2>
+        <p>Jonathan Foerste<br>
+          Geschwister-Scholl-Platz 1<br>
+          80539 Munich<br>
+          GERMANY</p>
+        <p><a href="mailto:contact@linque.eu">contact@linque.eu</a><br>
+          Phone: 089 2180 2644</p>
+      </div>
+      <div class="privacy-link">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-menu">
+        
+      </div>
+    </div> -->
+  </footer>
+</body>
+</html>

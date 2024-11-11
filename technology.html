@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linque</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img class="desktop-logo" src="logotxt.png" alt="Desktop Logo">
+          <img class="mobile-logo" src="mobile.png" alt="Mobile Logo">
+        </a>
+      </div>
+      <div class="nav-container">
+        <button id="menu-toggle" class="menu-icon">&#9776;</button>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const menu = document.querySelector('.menu');
+      menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+    </script>
+  </header>
+
+  <main>
+    <section id="home" class="parallax-section">
+      <div class="banner">
+        <img src="tech_01.jpg" alt="Banner Image">
+      </div>
+      <div class="container">
+        <h1>Enabling computers of the future</h1>
+        <p>We are a European startup developing the computing hardware; Fast, efficient, sustainable.</p>
+      </div>
+    </section>
+
+    <section id="technology" class="parallax-section">
+      <div class="container">
+
+        <h1>Technology</h1>
+            <p>We believe that integrated photonics provide the key to unlock the next era of computing, 
+              by removing the bounds faced today by electronic systems. 
+            </p>
+
+        <div class="subblocks-container">
+          
+          <div class="subblock subblock-image_01">
+            <h2>Fast</h2>
+              <p>The speed of electronic signals is limited. Base CPU clock rates have already peaked 10 years ago.
+              Photonic signals can be modulated almost arbitrarily fast, which has already revolutionized communication systems.
+              It's time to do the same with computing.
+            </p>
+          </div>
+          <div class="subblock subblock-image_02">
+            <h2>Efficient</h2>
+            <p>Computing operations between light waves are coherent. Creating a light pulse, reading out the
+              computation and reprogramming the chip electronically are the only tasks consuming power, which can 
+              lead to drastically lower energy cost for many algorithms.
+            </p>
+          </div>
+          <div class="subblock subblock-image_03">
+            <h2>CMOS compatible</h2>
+            <p>Phononic integrated circuits can be fabricated in the same foundries that make electronic ICs. 
+              Even better, the size of photonic components means that older nodes can be repurposed to produce state-of-the-art
+              photonic ICs. 
+            </p>
+          </div>
+          <div class="subblock subblock-image_04">
+            <h2>Analog</h2>
+            <p>Instead of discrete binary levels, information in photonic circuits is encoded continuously
+              onto the properties of lightwaves. That way, a computation completes
+              when a pulse of light has travelled through the chip.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="parallax-section">
+      <div class="container">
+        <h1>How to reach Us</h1>
+        <p>If you want to know more about light-based magic and get a free online spell lesson, drop us an email at <a href="mailto:contact@linque.eu">contact@linque.eu</a></p>
+      </div>
+      <!--<form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" class="name-input" placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="email-input" placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" class="message-input" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form> -->
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="line"></div>
+      <div class="contact-section">
+        <h2>Contact</h2>
+        <p>Jonathan Foerste<br>
+          Geschwister-Scholl-Platz 1<br>
+          80539 Munich<br>
+          GERMANY</p>
+        <p><a href="mailto:contact@linque.eu">contact@linque.eu</a><br>
+          Phone: 089 2180 2644</p>
+      </div>
+      <div class="privacy-link">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-menu">
+        <!-- Include any additional footer menu items or links here -->
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
