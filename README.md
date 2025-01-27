@@ -1,2 +1,0 @@
-# website
-Git for Website
