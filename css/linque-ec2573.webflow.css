@@ -390,7 +390,7 @@ a {
   align-items: center;
   padding-top: 10px;
   padding-right: 5%;
-  display: block;
+  display: flex;
 }
 
 .text-span {
@@ -498,6 +498,11 @@ a {
     background-size: auto, cover, auto;
   }
 
+  .section.hero-section.solutions {
+    background-image: linear-gradient(90deg, #000, #000 3%, #6e6e6e00 93%, #fff0), url('../images/solutions.jpg'), linear-gradient(#0000, #0000);
+    background-position: 0 0, 60%, 0 0;
+  }
+
   .heading-section-subtitle {
     font-size: 50px;
     line-height: 50px;
@@ -522,6 +527,10 @@ a {
     padding-top: 20px;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .div-block-3.four-columns {
+    grid-template-columns: 1fr 1fr;
   }
 
   .nav-menu {
@@ -668,6 +677,11 @@ a {
     background-size: auto, cover, auto;
   }
 
+  .section.hero-section.solutions {
+    background-image: linear-gradient(90deg, #000, #000 4%, #6e6e6e00 77%, #fff0), url('../images/solutions.jpg'), linear-gradient(#0000, #0000);
+    background-position: 0 0, 70%, 0 0;
+  }
+
   .paragraph-right-aligned {
     margin-left: 0%;
   }
@@ -686,6 +700,11 @@ a {
 
   .paragraph.paragraph-on-light.half-page {
     max-width: 80%;
+  }
+
+  .div-block-3.four-columns {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
   }
 
   .div-block-3.about {
