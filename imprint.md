@@ -23,4 +23,5 @@ Registration number (HRB): 304535
 ## VAT Identification Number
 
 VAT ID (USt-IdNr.) pursuant to § 27a of the German VAT Act (Umsatzsteuergesetz):  
+DE456578023
 

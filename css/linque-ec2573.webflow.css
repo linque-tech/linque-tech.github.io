@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: Didactgothic Webfont;
   src: url('../fonts/didactgothic-regular-webfont.woff2') format("woff2");
   font-weight: 400;
@@ -1302,7 +1302,7 @@ a {
 
 /* News page */
 .section.hero-section.news-hero {
-  background-image: linear-gradient(90deg, #000, #000 32%, #6e6e6e00 50%, #fff0), url('../images/solutions.jpg'), linear-gradient(#000, #000);
+  background-image: linear-gradient(90deg, #000, #000 32%, #6e6e6e00 50%, #fff0), url('../images/beach.jpg'), linear-gradient(#000, #000);
   background-position: 0 0, 50%, 0 0;
   background-repeat: repeat, no-repeat, repeat;
   background-size: auto, cover, auto;
@@ -1470,7 +1470,7 @@ a {
 
 @media screen and (max-width: 991px) {
   .section.hero-section.news-hero {
-    background-image: linear-gradient(90deg, #000, #000 18%, #6e6e6e00 58%, #fff0), url('../images/solutions.jpg');
+    background-image: linear-gradient(90deg, #000, #000 18%, #6e6e6e00 58%, #fff0), url('../images/beach.jpg');
     background-position: 0 0, 50%;
     background-size: auto, cover;
   }
