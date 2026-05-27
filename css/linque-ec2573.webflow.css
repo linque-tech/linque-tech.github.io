@@ -1469,6 +1469,12 @@ a {
   align-self: flex-start;
 }
 
+.button.news-read-more::after {
+  bottom: 6px;
+  left: 20px;
+  right: 20px;
+}
+
 .news-empty {
   padding: 60px 0;
 }
