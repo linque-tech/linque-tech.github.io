@@ -316,6 +316,17 @@ a {
   opacity: 1;
 }
 
+@keyframes orange-blink {
+  0%   { color: #7ad5ff; }
+  25%  { color: #cc820a; }
+  50%  { color: #cc820a; }
+  100% { color: #7ad5ff; }
+}
+
+.flip-letter.unflipped.orange-flash {
+  animation: orange-blink 0.45s ease;
+}
+
 .heading-section-subtitle.jobs {
   margin-top: 0;
   margin-bottom: 0;
@@ -478,10 +489,29 @@ a {
   font-size: 18px;
   transition: all .1s;
   display: inline-block;
+  position: relative;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  bottom: 11px;
+  left: 25px;
+  right: 25px;
+  width: auto;
+  height: 2px;
+  background-color: #cc820a;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.button:hover::after {
+  transform: scaleX(1);
 }
 
 .button:hover {
-  color: #e67a00;
+  color: #cc820a;
   background-color: #0d2b47;
 }
 
