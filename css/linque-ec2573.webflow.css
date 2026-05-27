@@ -161,6 +161,31 @@ a {
   background-color: #669dd800;
 }
 
+.nav-link.w-nav-link,
+.nav-link.w-dropdown-toggle {
+  position: relative;
+}
+
+.nav-link.w-nav-link::after,
+.nav-link.w-dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  right: 20px;
+  width: auto;
+  height: 2px;
+  background-color: #cc820a;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link.w-nav-link:hover::after,
+.nav-link.w-dropdown-toggle:hover::after {
+  transform: scaleX(1);
+}
+
 .nav-link.w--current {
   text-align: left;
   white-space: normal;
