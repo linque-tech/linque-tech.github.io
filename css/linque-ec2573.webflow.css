@@ -333,6 +333,11 @@ a {
   border-radius: 18px;
   margin: 5px;
   padding: 31px;
+  transition: transform .15s;
+}
+
+.div-block:hover {
+  transform: translateY(-4px);
 }
 
 .paragraph {
@@ -408,6 +413,11 @@ a {
   margin-right: 0;
   display: block;
   overflow: hidden;
+  transition: transform .15s;
+}
+
+.image-text-block:hover {
+  transform: translateY(-4px);
 }
 
 .div-block-4 {
@@ -549,7 +559,12 @@ a {
   align-items: stretch;
   margin-left: 0%;
   display: grid;
+  transition: transform .15s;
   overflow: hidden;
+}
+
+.div-block-10:hover {
+  transform: translateY(-4px);
 }
 
 .image-5 {
@@ -856,6 +871,11 @@ a {
   border-radius: 20px;
   overflow: hidden;
   aspect-ratio: 4 / 3;
+  transition: transform .15s;
+}
+
+.photo-grid-item:hover {
+  transform: translateY(-4px);
 }
 
 .photo-grid-item.wide {
