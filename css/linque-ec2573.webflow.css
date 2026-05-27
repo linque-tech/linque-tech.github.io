@@ -280,6 +280,17 @@ a {
   line-height: 75px;
 }
 
+.flip-letter {
+  display: inline-block;
+  transform: scaleX(-1);
+  opacity: 0.35;
+}
+
+.flip-letter.unflipped {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
 .heading-section-subtitle.jobs {
   margin-top: 0;
   margin-bottom: 0;
