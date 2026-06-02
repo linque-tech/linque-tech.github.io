@@ -39,7 +39,7 @@
           </nav>
         </div>
         <a href="news.html" class="nav-link w-nav-link">News</a>
-        <a href="mailto:contact@linque.eu" class="nav-link w-nav-link">Contact</a>
+        <a href="#contact" class="nav-link w-nav-link">Contact</a>
       </nav>
       <div class="menu-button w-nav-button">
         <div class="icon w-icon-nav-menu"></div>
@@ -80,7 +80,7 @@
   <section class="section">
     <div class="w-layout-blockcontainer container-section w-container">
       <div class="div-block-3">
-        <div id="w-node-_9429e61d-7596-b821-c701-45f84e9660c5-a0c3752e" class="image-text-block"><img src="images/group_funny_lq.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 900px" srcset="images/group_funny_lq-p-500.jpg 500w, images/group_funny_lq.jpg 900w" alt="">
+        <div id="w-node-_9429e61d-7596-b821-c701-45f84e9660c5-a0c3752e" class="image-text-block"><img src="images/group_funny_lq.jpg" loading="lazy" width="900" height="599" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 900px" srcset="images/group_funny_lq-p-500.jpg 500w, images/group_funny_lq.jpg 900w" alt="">
           <div class="div-block-4">
             <h1 class="heading-section-subtitle heading-small-block">Our Story</h1>
             <p class="paragraph">Discover the team and their motivation to drive innovation.  </p>
@@ -96,7 +96,7 @@
             <div class="div-block-5">
               <a href="solutions.html" class="button w-button">Discover more</a>
             </div>
-          </div><img src="images/tech_09_llq.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 900px" srcset="images/tech_09_llq-p-500.jpg 500w, images/tech_09_llq-p-800.jpg 800w, images/tech_09_llq.jpg 900w" alt="" class="image-2">
+          </div><img src="images/tech_09_llq.jpg" loading="lazy" width="900" height="599" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 900px" srcset="images/tech_09_llq-p-500.jpg 500w, images/tech_09_llq-p-800.jpg 800w, images/tech_09_llq.jpg 900w" alt="" class="image-2">
         </div>
       </div>
     </div>
@@ -107,9 +107,51 @@
       <p class="paragraph paragraph-on-light">Want to know more about our products or do you have questions? Contact us for more information and become an early adopter of this disruptive technology. </p>
     </div>
     <div class="div-block-5">
-      <a href="mailto:contact@linque.eu" class="button w-button">Get in touch</a>
+      <a href="#contact" class="button w-button">Get in touch</a>
     </div>
   </section>
+  <section id="contact" class="section">
+    <div class="w-layout-blockcontainer container-section w-container">
+      <h1 class="heading-section-top">Contact</h1>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <h1 class="heading-section-subtitle">Let us know what you think.</h1>
+          <p class="contact-intro">Fill in your details and click the button to open your mail app with everything pre-filled.</p>
+        </div>
+        <div class="contact-form">
+        <div class="form-row form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" class="contact-input" placeholder="Your full name" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-company">Company</label>
+            <input type="text" id="cf-company" name="company" class="contact-input" placeholder="Your company (optional)" autocomplete="organization">
+          </div>
+        </div>
+        <div class="form-row form-row-2col">
+          <div class="form-group">
+            <label class="form-label" for="cf-email">Your email</label>
+            <input type="email" id="cf-email" name="email" class="contact-input" placeholder="your@email.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" class="contact-input" placeholder="How can we help?">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" class="contact-input contact-textarea" placeholder="Your message…"></textarea>
+        </div>
+        <div class="contact-actions">
+          <a id="cf-mailto" href="mailto:contact@linque.eu" class="button contact-mailto">Open in mail app</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="section footer">
     <div class="w-layout-blockcontainer container-section w-container">
       <div class="div-block-6"><img src="images/Logo_white.png" loading="lazy" width="145" id="w-node-_940f7626-b93c-0eed-9b32-754f47c56d0c-a0c3752e" alt="" srcset="images/Logo_white-p-500.png 500w, images/Logo_white-p-800.png 800w, images/Logo_white.png 2000w" sizes="145px" class="footer-logo">
@@ -118,7 +160,7 @@
           <a href="solutions.html" class="nav-link nav-link-footer">Solutions</a>
           <a href="about.html" class="nav-link nav-link-footer">About</a>
           <a href="news.html" class="nav-link nav-link-footer">News</a>
-          <a href="mailto:contact@linque.eu" class="nav-link nav-link-footer">Contact</a>
+          <a href="#contact" class="nav-link nav-link-footer">Contact</a>
         </div>
         <div class="div-block-7">
           <a href="https://www.linkedin.com/company/linque-technologies/" class="nav-link nav-link-footer">LinkedIn</a>
@@ -134,6 +176,26 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/scroll-animations.js" type="text/javascript"></script>
   <script>
+    (function () {
+      var fields = ['cf-name', 'cf-company', 'cf-email', 'cf-subject', 'cf-message'];
+      function updateMailtoLink() {
+        var name    = document.getElementById('cf-name').value.trim();
+        var company = document.getElementById('cf-company').value.trim();
+        var subject = document.getElementById('cf-subject').value.trim();
+        var message = document.getElementById('cf-message').value.trim();
+        var body = (name    ? 'Name: '    + name    + '\n' : '')
+                 + (company ? 'Company: ' + company + '\n' : '')
+                 + (message ? '\n' + message : '');
+        document.getElementById('cf-mailto').href =
+          'mailto:contact@linque.eu'
+          + '?subject=' + encodeURIComponent(subject || 'Contact from website')
+          + '&body='    + encodeURIComponent(body);
+      }
+      fields.forEach(function (id) {
+        document.getElementById(id).addEventListener('input', updateMailtoLink);
+      });
+    })();
+
     (function () {
       var heading = document.querySelector('.heading-section-subtitle.heading-hero-section');
       if (!heading) return;
