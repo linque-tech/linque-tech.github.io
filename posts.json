@@ -5,5 +5,26 @@
     "date": "2026-05-18",
     "image": "images/2026-05-18-ictgc-grand-challenge.jpg",
     "excerpt": "Linque has been named a winner of the 4th Batch of the IC Taiwan Grand Challenge (ICTGC), a premier global innovation competition focused on accelerating breakthrough semiconductor and deep technology solutions organized by Taiwan's National Science and Technology Council (NSTC)."
+  },
+  {
+    "slug": "2026-03-10-series-a-funding",
+    "title": "Linque Closes Series A Funding Round to Accelerate Silicon Photonics Development",
+    "date": "2026-03-10",
+    "image": "images/tech_09_llq.jpg",
+    "excerpt": "Linque Technologies has successfully closed its Series A funding round, securing capital to expand its silicon photonics research team and accelerate the path to commercial deployment of its programmable photonic integrated circuits."
+  },
+  {
+    "slug": "2026-01-22-hyperscaler-partnership",
+    "title": "Linque Announces Strategic Partnership with Leading Hyperscaler for AI Workload Optimization",
+    "date": "2026-01-22",
+    "image": "images/datacenter.jpeg",
+    "excerpt": "Linque has entered a strategic collaboration agreement with a major cloud infrastructure provider to co-develop photonic accelerator solutions targeting large-scale AI inference and training workloads."
+  },
+  {
+    "slug": "2025-11-05-prototype-milestone",
+    "title": "Linque Demonstrates First Working Prototype of Photonic Matrix Processor",
+    "date": "2025-11-05",
+    "image": "images/nano.jpg",
+    "excerpt": "The Linque engineering team has successfully demonstrated the first working prototype of its photonic matrix processor, achieving a tenfold reduction in energy per operation compared to conventional digital accelerators at equivalent throughput."
   }
 ]
