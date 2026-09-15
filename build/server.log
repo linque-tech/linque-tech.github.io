@@ -1,0 +1,4 @@
+{"timestamp":"2026-09-15T08:23:12.797928Z","level":"INFO","fields":{"message":"identity verification result","api_host":"https://api.gdsfactory.com/","phase":"verify_api_key","status":"invalid_key","http_status":401},"target":"gfp::identity::service"}
+{"timestamp":"2026-09-15T08:23:13.695717Z","level":"INFO","fields":{"message":"watching","path":"v:\\ag-linque\\Technology\\Chips and Products\\DC7- Maipo\\linque-tech.github.io"},"target":"gfp::serve::tasks::file_watcher"}
+{"timestamp":"2026-09-15T08:23:13.713942Z","level":"INFO","fields":{"message":"nyanlib scheduler started","path":"v:\\ag-linque\\Technology\\Chips and Products\\DC7- Maipo\\linque-tech.github.io\\build\\models.nyanlib"},"target":"gfp::serve::tasks::nyanlib"}
+{"timestamp":"2026-09-15T08:23:13.731646Z","level":"INFO","fields":{"message":"nyanlib scheduler stage","stage":"WaitingForIndex"},"target":"gfp::serve::tasks::nyanlib"}
