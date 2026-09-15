@@ -1,0 +1,15 @@
+[Unit]
+Description=Linque contact form handler
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/linque-contact
+EnvironmentFile=/opt/linque-contact/.env
+ExecStart=/opt/linque-contact/contact-handler
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
